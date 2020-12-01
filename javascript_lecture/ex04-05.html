@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x = 100;
+
+        function ab(){
+            var x = 1;
+            document.write("local variable = "+ x );
+            document.write('<br>');
+            document.write("global variable = "+ this.x);
+        }
+
+        ab(); // 이렇게 해야 함수 소환
+    </script>
+</body>
+</html>
